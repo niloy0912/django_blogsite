@@ -4,25 +4,24 @@
     {% load static %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}"> 
     <title>BlogSite</title>
 </head>
 <body>
     <nav class="nav">
-        <button>
-            Random
-        </button>
         <h1>
-            Heading
+            My Blog Site
         </h1>
     </nav>
     <div class="blog-body">
+    {% for t in title %}
         <h2>
-            Blog 1
+            {{ t }}
         </h2>
         <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex consequatur corporis beatae expedita sint pariatur iste maiores inventore ea mollitia totam laborum eligendi quisquam autem, nulla ab, delectus cupiditate odit tempore magni, quasi cum nemo ipsam. Deserunt error itaque ea aliquid earum beatae consequuntur cum. Atque fugiat quas ullam consequatur?
+            fucking shit
         </p>
+    {% endfor %}
     </div>
 </body>
 </html>

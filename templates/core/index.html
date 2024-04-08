@@ -14,13 +14,21 @@
         </h1>
     </nav>
     <div class="blog-body">
-    {% for t in title %}
-        <h2>
-            {{ t }}
+    {% for t in blog %}
+        <h2 class="blog-title">
+            {{ t.title }}
         </h2>
-        <p>
-            fucking shit
+        <p class="blog-content">
+            {{ t.content }}
         </p>
+        <div class="blog-info">
+            <p class="blog-date-posted">
+                {{ t.date_posted }}
+            </p>
+            <p class="blog-author">
+                {{ t.author }}
+            </p>
+        </div>
     {% endfor %}
     </div>
 </body>

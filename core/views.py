@@ -4,6 +4,8 @@ from .models import *
 # Create your views here.
 def index(request):
     blog = Blog.objects.all()
-        
-    context = {"title" : blog, "content" : "text"}
+    content = [b.content for b in blog]
+    
+    context = {"blog" : blog}
+    #print(context)
     return render(request, "core/index.html", context)

@@ -23,3 +23,19 @@ nav {
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+.blog-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.blog-info p {
+    color: rgb(71, 122, 122);
+    font-size: 18px;
+}
+
+.blog-date-posted {
+    background-color: aqua;
+    width: 100px;
+}
